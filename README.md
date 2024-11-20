@@ -73,7 +73,7 @@ Feel free to open issues or submit pull requests if you have suggestions for imp
 
 ## License
 
-MIT
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Author
 
