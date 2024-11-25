@@ -43,6 +43,11 @@
           return; // URL is already clean, no action needed
       }
 
+      // Check if URL contains tracking parameter or is a Google Sorry URL
+      if (!currentUrl.includes('?trackingId=') && !currentUrl.startsWith('https://www.google.com/sorry/')) {
+          return; // No tracking parameter found, no need to clean
+      }
+
       const jobId = extractLinkedInJobId(currentUrl);
       if (jobId) {
           const cleanUrl = `https://www.linkedin.com/jobs/view/${jobId}`;
