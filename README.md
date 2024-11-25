@@ -4,19 +4,21 @@ A lightweight browser extension that automatically removes tracking parameters f
 
 ## Why?
 
-LinkedIn often adds tracking parameters to job URLs when sharing or accessing them through email notifications. These parameters can sometimes cause issues during the application process. This extension automatically cleans the URLs by keeping only the essential job ID.
+LinkedIn often adds tracking parameters to job URLs when sharing or accessing them through email notifications. Additionally, clicking job links from emails might redirect through Google's security check(Captcha). These parameters and redirects can sometimes cause issues during the application process, or are annoying. This extension automatically cleans the URLs by keeping only the essential job ID.
 
 For example, it converts:
 
 
 ```https://www.linkedin.com/jobs/view/4037678901/?trackingId=...&refId=...&midToken=...```
 
+Or:
+
+```https://www.google.com/sorry/index?continue=https://www.linkedin.com/comm/jobs/view/4037678901?trackingId=..```
+
 To:
 
 ```https://www.linkedin.com/jobs/view/4037678901```
 
-
-## Installation
 
 ## Installation
 
