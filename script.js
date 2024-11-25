@@ -44,7 +44,7 @@
       }
 
       // Check if URL contains tracking parameter or is a Google Sorry URL
-      if (!currentUrl.includes('?trackingId=') && !currentUrl.startsWith('https://www.google.com/sorry/')) {
+      if (!currentUrl.includes('trackingId=') && !currentUrl.startsWith('https://www.google.com/sorry/')) {
           return; // No tracking parameter found, no need to clean
       }
 
